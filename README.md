@@ -29,11 +29,12 @@ Next, a thorough inspection of the data is essential. This involves looking for 
 - Missing values can pose challenges for machine learning models. I'll address them using appropriate techniques like filling with the median, mode, or other imputation methods depending on the specific data and context.
 Outliers can also significantly impact model performance. I'll carefully assess outliers and decide on the most suitable approach. This could involve removing them, applying Winsorization (capping extreme values), or implementing other strategies based on the analysis and the influence of these outliers on the overall data.
 Data Transformation:
-
-Machine learning models typically work best with numerical data. If the dataset contains categorical features, like cabin class, I'll transform them into a suitable numerical format. Two common approaches are one-hot encoding, which creates separate binary features for each category, and label encoding, which assigns numerical values to each category.
+3. **Transformation and Normalization**:
+- Machine learning models typically work best with numerical data. If the dataset contains categorical features, like cabin class, I'll transform them into a suitable numerical format. Two common approaches are one-hot encoding, which creates separate binary features for each category, and label encoding, which assigns numerical values to each category.
 Depending on the analysis and the chosen model, I might also normalize or standardize the numerical values (like age or fare). This ensures all features are on a similar scale, preventing features with larger ranges from dominating the model's learning process.
 Expected Output:
 
+## Conclusion:
 The final outcome of this task will be a well-structured Jupyter notebook documenting the entire data cleaning and preprocessing workflow. This notebook will include:
 
 A comparison of data statistics before and after cleaning. This will highlight changes like the reduction in missing values or the shift in feature distributions.
